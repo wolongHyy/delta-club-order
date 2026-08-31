@@ -1,0 +1,24 @@
+<view class="panel">
+  <view class="title">网页服务地址</view>
+  <view class="hint">
+    微信开发者工具模拟器一般可用 localhost。手机预览时必须用电脑局域网地址，且手机和电脑要连同一个 Wi-Fi。
+    当前默认地址是 {{defaultUrl}}。电脑 IP 变化后，在这里改一下，再返回点单页。
+  </view>
+  <input class="input" value="{{baseUrl}}" placeholder="http://192.168.31.178:3000" bindinput="onInput" />
+  <button class="button" type="primary" bindtap="onSave">保存并刷新点单页</button>
+  <button class="button secondary" bindtap="onReset">恢复默认地址</button>
+</view>
+<view class="panel">
+  <view class="title">接口连通测试</view>
+  <view class="hint">测试地址：{{baseUrl}}/api/home</view>
+  <button class="button" type="primary" bindtap="onTest">测试服务</button>
+  <view wx:if="{{testResult}}" class="result {{testError ? 'error' : ''}}">{{testResult}}</view>
+</view>
+<view class="panel">
+  <view class="title">三端入口</view>
+  <view class="hint">用户端是点单页。打手端需要审核通过的账号登录；管理端使用账号 admin、密码 admin123 登录。</view>
+  <view class="side-row">
+    <button class="button secondary" data-path="/fighter" bindtap="onOpenSide">打手端</button>
+    <button class="button secondary" data-path="/admin" bindtap="onOpenSide">管理端</button>
+  </view>
+</view>

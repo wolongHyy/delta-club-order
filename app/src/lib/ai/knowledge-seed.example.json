@@ -1,0 +1,10 @@
+[
+  {
+    "key": "example-entry",
+    "category": "示例分类",
+    "title": "示例条目（模板占位，不含真实经营数据）",
+    "content": "这里填写客服回答的业务依据，例如套餐价格、规则说明等。真实文件 knowledge-seed.json 属俱乐部内部资料，不入库；请从本地备份复制本文件为 knowledge-seed.json 后填写真实内容。",
+    "keywords": "示例,关键词,用逗号分隔",
+    "source": "内部资料"
+  }
+]

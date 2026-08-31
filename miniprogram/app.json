@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/debug/debug"
+  ],
+  "window": {
+    "navigationBarTitleText": "三角洲俱乐部",
+    "navigationBarBackgroundColor": "#f3f7ff",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f3f7ff"
+  },
+  "tabBar": {
+    "color": "#8b98a9",
+    "selectedColor": "#0ea5e9",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "点单"
+      },
+      {
+        "pagePath": "pages/debug/debug",
+        "text": "调试"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

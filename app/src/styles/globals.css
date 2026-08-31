@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 蓝白亮色主题 */
+  /* Tailwind 透明度修饰符需要 RGB 通道变量，不能直接使用带 var() 的完整颜色。 */
+  --bg-rgb: 243 247 255;
+  --surface-rgb: 255 255 255;
+  --surface2-rgb: 234 241 255;
+  --line-rgb: 37 99 235;
+  --primary-rgb: 37 99 235;
+  --primary-bright-rgb: 59 130 246;
+  --primary-deep-rgb: 29 78 216;
+  --ink-rgb: 15 23 42;
+  --ink-dim-rgb: 71 85 105;
+  --ink-faint-rgb: 148 163 184;
+  --ok-rgb: 16 185 129;
+  --warn-rgb: 245 158 11;
+  --danger-rgb: 239 68 68;
+}
+
+* {
+  border-color: rgb(var(--line-rgb) / 0.14);
+}
+
+html,
+body {
+  height: 100%;
+  background: rgb(var(--bg-rgb));
+  color: rgb(var(--ink-rgb));
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(37, 99, 235, 0.25);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

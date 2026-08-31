@@ -1,0 +1,36 @@
+﻿# 依赖与构建产物（体积大、可再生，不入库）
+node_modules/
+app/node_modules/
+app/.next/
+node/
+
+# 数据库（可用 seed 脚本重建；需要备份时直接复制 app/db/custom.db）
+app/db/
+
+# 生成的 GLM 识图 MCP 服务器（位于项目 outputs/ 下，可随时重新构建）
+outputs/
+
+# 日志
+*.log
+*.log.err
+dev.log
+
+# 环境变量（含微信 AppSecret，绝不能入库）
+.env
+.env.local
+.env.*.local
+
+# 识图 MCP 服务器（第三方工具，不入库）
+outputs/
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# TypeScript 编译缓存（可再生，不入库）
+app/tsconfig.tsbuildinfo
+
+# ===== 俱乐部内部经营资料（价格、规则、客服知识库、种子数据等，一律不入库）=====
+需求文档与设计方案.md
+app/scripts/seed.cjs
+app/src/lib/ai/knowledge-seed.json

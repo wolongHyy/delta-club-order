@@ -1,0 +1,9 @@
+{
+  "desc": "Local development testing",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "*"
+    }
+  ]
+}
