@@ -62,7 +62,10 @@ AI_MODEL=deepseek-chat
 
 ## 协作方式（重要）
 
-- `main` 分支已启用 GitHub 分支保护：**禁止直接 push**，所有改动必须通过 **fork + Pull Request** 提交，且需要 **至少 1 人审核通过**后合并。
+- `main` 分支已启用 GitHub 分支保护：
+  - 仓库管理员（你自己）：可随时直接 push / 直接合并，不受审核限制；
+  - 其他协作者 / 外部贡献者：必须 **fork + Pull Request** 提交，且需要 **至少 1 人审核通过**后才能合并；
+  - 任何人：禁止强推（force push）与删除 main 分支。
 - 请在 `app/.env` 中配置本地密钥，`.env` 已被 `.gitignore` 排除，**不要**把真实 API Key、密码提交到仓库。
 
 ## 内部资料与安全
