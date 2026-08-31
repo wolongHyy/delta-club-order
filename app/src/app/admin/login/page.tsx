@@ -32,7 +32,7 @@ export default function AdminLoginPage() {
       <Card className="w-full max-w-sm space-y-4 p-6">
         <div>
           <h1 className="text-lg font-bold text-ink">管理后台登录</h1>
-          <p className="mt-1 text-xs text-ink-faint">Delta Club Admin Console</p>
+          <p className="mt-1 text-xs text-ink-faint">Delta Game Service Platform Admin Console</p>
         </div>
         <form className="space-y-3" onSubmit={submit}>
           <Field label="账号"><TextInput value={username} onChange={(e) => setUsername(e.target.value)} autoComplete="username" /></Field>

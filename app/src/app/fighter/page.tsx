@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 
 import { useEffect, useRef, useState } from 'react'
 import type { FighterAccount, FighterEarnings, Order, Withdrawal } from '@/lib/types'
@@ -341,7 +341,7 @@ function Field({ label, hint, children }: { label: string; hint?: string; childr
 
 
 function Login({ username, password, notice, onUsername, onPassword, onLogin, wechatEnabled, onWechatLogin }: { username: string; password: string; notice: string; onUsername: (value: string) => void; onPassword: (value: string) => void; onLogin: () => void; wechatEnabled: boolean; onWechatLogin: () => void }) {
-  return <main className="mx-auto min-h-screen max-w-md bg-bg p-5"><div className="pt-14"><p className="text-xs font-semibold uppercase text-primary">Delta Club / Fighter</p><h1 className="mt-2 text-2xl font-bold text-ink">打手工作台</h1><p className="mt-2 text-sm text-ink-dim">登录后管理接单、服务和收益</p><Card className="mt-8 space-y-4 p-4"><TextInput value={username} onChange={(e) => onUsername(e.target.value)} placeholder="登录账号" /><TextInput type="password" value={password} onChange={(e) => onPassword(e.target.value)} placeholder="登录密码" /><Btn block onClick={onLogin}>登录打手端</Btn>{wechatEnabled && <><div className="flex items-center gap-3 text-[11px] text-ink-faint"><span className="h-px flex-1 bg-line" /><span>或</span><span className="h-px flex-1 bg-line" /></div><Btn block variant="soft" onClick={onWechatLogin}>微信一键登录</Btn></>}</Card>{notice && <p className="mt-4 text-center text-sm text-danger">{notice}</p>}<p className="mt-4 text-center text-xs text-ink-faint">账号需先通过管理员审核</p></div></main>
+  return <main className="mx-auto min-h-screen max-w-md bg-bg p-5"><div className="pt-14"><p className="text-xs font-semibold uppercase text-primary">Delta Game Service / Fighter</p><h1 className="mt-2 text-2xl font-bold text-ink">打手工作台</h1><p className="mt-2 text-sm text-ink-dim">登录后管理接单、服务和收益</p><Card className="mt-8 space-y-4 p-4"><TextInput value={username} onChange={(e) => onUsername(e.target.value)} placeholder="登录账号" /><TextInput type="password" value={password} onChange={(e) => onPassword(e.target.value)} placeholder="登录密码" /><Btn block onClick={onLogin}>登录打手端</Btn>{wechatEnabled && <><div className="flex items-center gap-3 text-[11px] text-ink-faint"><span className="h-px flex-1 bg-line" /><span>或</span><span className="h-px flex-1 bg-line" /></div><Btn block variant="soft" onClick={onWechatLogin}>微信一键登录</Btn></>}</Card>{notice && <p className="mt-4 text-center text-sm text-danger">{notice}</p>}<p className="mt-4 text-center text-xs text-ink-faint">账号需先通过管理员审核</p></div></main>
 }
 
 function Metric({ label, value, tone }: { label: string; value: number; tone: string }) { return <Card className="p-4"><p className="text-xs text-ink-faint">{label}</p><p className={`mt-2 text-2xl font-bold ${tone}`}>{value}</p></Card> }

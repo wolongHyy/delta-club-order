@@ -50,7 +50,7 @@ export default function HomeView({
       <header className="sticky top-0 z-30 border-b border-line bg-bg/95 backdrop-blur">
         <div className="px-4 pb-3 pt-4">
           <h1 className="mb-3 text-lg font-bold tracking-wide text-ink">
-            三角洲俱乐部 <span className="ml-1 text-xs font-normal text-primary">DELTA CLUB</span>
+            三角洲游戏服务平台 <span className="ml-1 text-xs font-normal text-primary">DELTA GAME SERVICE</span>
           </h1>
           <div className="flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-2">
             <IconSearch size={16} className="shrink-0 text-ink-faint" />

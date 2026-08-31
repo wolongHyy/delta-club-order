@@ -14,6 +14,6 @@ export async function GET() {
     welcomeMessage: s.welcomeMessage,
     quickQuestions: s.quickQuestions,
     customerServiceWechat: shop.customerServiceWechat || "",
-    shopName: shop.shopName || "三角洲俱乐部",
+    shopName: shop.shopName || "三角洲游戏服务平台",
   })
 }

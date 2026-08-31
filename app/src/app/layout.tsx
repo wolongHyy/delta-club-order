@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import '@/styles/globals.css'
 
 export const metadata: Metadata = {
-  title: '三角洲俱乐部 · 陪玩点单',
-  description: '三角洲行动陪玩、护航、趣味单在线点单平台',
+  title: '三角洲游戏服务平台',
+  description: '三角洲行动护航、陪玩、趣味单在线服务平台',
 }
 
 export const viewport: Viewport = {

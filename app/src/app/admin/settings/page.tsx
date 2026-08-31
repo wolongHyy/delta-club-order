@@ -54,7 +54,7 @@ export default function AdminSettings() {
         </Btn>
       </Card>
       <Card className="p-4 text-xs leading-5 text-ink-faint">
-        <p>系统信息：三角洲俱乐部陪玩点单平台 v1.0</p>
+        <p>系统信息：三角洲游戏服务平台 v1.0</p>
         <p>数据存储：SQLite（app/db/custom.db）</p>
         <p>运行方式：start.bat 便携启动 / npm run dev 开发</p>
       </Card>

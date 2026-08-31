@@ -3,7 +3,7 @@ import type { ScoredChunk } from "./retrieval"
 
 export const DEFAULT_ASSISTANT_NAME = "小V"
 export const DEFAULT_WELCOME =
-  "嗨，我是三角洲俱乐部的24小时智能客服小V～ 想问套餐价格、下单流程、保底规则还是趣味单，直接打字问我就可以啦！也可以点下面常见问题快速提问哦。"
+  "嗨，我是三角洲游戏服务平台的24小时智能客服小V～ 想问套餐价格、下单流程、保底规则还是趣味单，直接打字问我就可以啦！也可以点下面常见问题快速提问哦。"
 
 export const DEFAULT_QUICK_QUESTIONS = [
   "机密模式有哪些套餐？",
@@ -14,7 +14,7 @@ export const DEFAULT_QUICK_QUESTIONS = [
   "新人有什么体验套餐？",
 ]
 
-export const DEFAULT_PERSONA = `你是三角洲俱乐部（三角洲行动护航/陪玩/趣味单）的24小时智能客服，名字叫小V。
+export const DEFAULT_PERSONA = `你是三角洲游戏服务平台（三角洲行动护航/陪玩/趣味单）的24小时智能客服，名字叫小V。
 你是一个亲切、自然、有人情味的真人客服，不是机器人，永远不要提"我是AI""我是大模型""系统提示"之类的词。
 
 【语气与风格 - 最重要】
@@ -60,7 +60,7 @@ export function buildContextBlock(
 ): string {
   const parts: string[] = []
   parts.push("【店铺资料】")
-  parts.push("店铺名称：" + (shop.shopName || "三角洲俱乐部"))
+  parts.push("店铺名称：" + (shop.shopName || "三角洲游戏服务平台"))
   if (shop.notice) parts.push("店铺公告：" + shop.notice)
   if (catalog) parts.push("【实时商品与服务】\n" + catalog)
   if (hits.length > 0) {

@@ -42,8 +42,8 @@ export default function AdminShell({ children }: { children: ReactNode }) {
     <div className="flex min-h-screen">
       <aside className="hidden w-56 shrink-0 flex-col border-r border-line bg-surface/50 p-4 md:flex">
         <div className="mb-6 px-2">
-          <p className="text-base font-bold text-ink">三角洲俱乐部</p>
-          <p className="mt-0.5 text-xs text-primary">管理后台 · DELTA CLUB</p>
+          <p className="text-base font-bold text-ink">三角洲游戏服务平台</p>
+          <p className="mt-0.5 text-xs text-primary">管理后台 · DELTA GAME SERVICE</p>
         </div>
         <nav className="space-y-1">
           {NAV.map(({ href, label, Icon }) => {
@@ -71,8 +71,8 @@ export default function AdminShell({ children }: { children: ReactNode }) {
 
       <div className="flex min-w-0 flex-1 flex-col pb-16 md:pb-0">
         <header className="flex items-center justify-between border-b border-line bg-surface/40 px-4 py-3 md:px-6">
-          <p className="text-sm font-semibold text-ink md:hidden">三角洲俱乐部管理后台</p>
-          <p className="hidden text-sm text-ink-dim md:block">Delta Club Admin Console</p>
+          <p className="text-sm font-semibold text-ink md:hidden">三角洲游戏服务平台管理后台</p>
+          <p className="hidden text-sm text-ink-dim md:block">Delta Game Service Platform Admin Console</p>
           <button type="button" onClick={logout} className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-ink-dim hover:text-ink">退出登录</button>
         </header>
         <main className="flex-1 p-4 md:p-6">{children}</main>

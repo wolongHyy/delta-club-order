@@ -1,6 +1,6 @@
-﻿<view class="page">
+<view class="page">
   <view class="brand">
-    <text class="brand-title">三角洲俱乐部</text>
+    <text class="brand-title">三角洲游戏服务平台</text>
     <text class="brand-sub">登录同步微信身份与手机号</text>
   </view>
 
