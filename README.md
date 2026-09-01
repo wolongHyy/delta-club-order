@@ -1,3 +1,12 @@
+## 一键启动（按平台选一条）
+
+- **Windows** — 双击 `start.bat`，浏览器打开 <http://localhost:3000>（便携版自带 `node\node.exe`，无需装 Node）。
+- **macOS**   — 双击 `start.command`（脚本会自动 `chmod +x`，并在 Terminal 窗口里看日志）。首次运行需要先装 Node.js 22+（`brew install node@22`），首次启动会自动 `npm install` 并编译。
+- **Linux**   — 在终端执行 `./start.sh` 或 `bash start.sh`（需要 Node.js 22+，`/usr/bin/node` 或 `node/bin/node`）。
+
+> 端口冲突？把脚本里 3000 换成你想要的（生产侧 `app/server.js` 也可改）。
+
+
 # 三角洲游戏服务平台
 
 三角洲行动护航 / 陪玩 / 趣味单俱乐部的在线点单平台。面向三类角色：顾客（下单与咨询）、打手（抢单与服务）、管理员（商品、订单、打手、提现与客服管理）。系统内置 24 小时智能客服，基于业务知识库回答套餐、规则与趣味单相关问题。
