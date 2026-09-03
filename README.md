@@ -113,7 +113,7 @@ node/                   # 便携版 Node.js 运行时（不入库）
 | --- | --- | --- |
 | DB_PATH | SQLite 文件路径 | `app/db/custom.db` |
 | PORT / HOSTNAME | 服务端口与监听地址 | 3000 / 0.0.0.0 |
-| ADMIN_USERNAME / ADMIN_PASSWORD | 管理端账号密码 | admin / 空 |
+| ADMIN_USERNAME / ADMIN_PASSWORD | 管理端账号密码 | admin / admin123（本地默认；生产必须设置） |
 | ADMIN_SESSION_SECRET | 管理端会话签名密钥 | 本地默认值 |
 | CUSTOMER_SESSION_SECRET | 顾客会话签名密钥 | 本地默认值 |
 | FIGHTER_SESSION_SECRET | 打手端会话签名密钥 | 本地默认值 |

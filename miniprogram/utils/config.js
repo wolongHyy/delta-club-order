@@ -1,5 +1,5 @@
 // 手机预览必须用电脑的局域网 IP；IP 变了可在“调试”页改成新地址。
-const LAN_BASE_URL = 'http://192.168.31.178:3000'
+const LAN_BASE_URL = 'http://172.27.59.81:3000'
 
 function getDefaultBaseUrl() {
   return LAN_BASE_URL

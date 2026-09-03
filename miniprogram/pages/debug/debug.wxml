@@ -4,7 +4,7 @@
     微信开发者工具模拟器一般可用 localhost。手机预览时必须用电脑局域网地址，且手机和电脑要连同一个 Wi-Fi。
     当前默认地址是 {{defaultUrl}}。电脑 IP 变化后，在这里改一下，再返回点单页。
   </view>
-  <input class="input" value="{{baseUrl}}" placeholder="http://192.168.31.178:3000" bindinput="onInput" />
+  <input class="input" value="{{baseUrl}}" placeholder="http://电脑局域网IP:3000" bindinput="onInput" />
   <button class="button" type="primary" bindtap="onSave">保存并刷新点单页</button>
   <button class="button secondary" bindtap="onReset">恢复默认地址</button>
 </view>

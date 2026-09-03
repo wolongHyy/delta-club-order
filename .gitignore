@@ -1,4 +1,4 @@
-﻿# 依赖与构建产物（体积大、可再生，不入库）
+# 依赖与构建产物（体积大、可再生，不入库）
 node_modules/
 app/node_modules/
 app/.next/
@@ -29,6 +29,10 @@ Thumbs.db
 
 # TypeScript 编译缓存（可再生，不入库）
 app/tsconfig.tsbuildinfo
+
+# 微信开发者工具在 pages 目录误生成的工程配置（垃圾文件）
+miniprogram/pages/project.config.json
+miniprogram/pages/project.private.config.json
 
 # ===== 俱乐部内部经营资料（价格、规则、客服知识库、种子数据等，一律不入库）=====
 需求文档与设计方案.md
